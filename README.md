@@ -3,7 +3,7 @@
 A 60-day, story-based SQL course. Each day is **one page** with a voiced 3D story, a practice box, a quiz and a scorecard. 30 minutes of story, 30 minutes of practice.
 
 ## Open it
-- **Online:** go to `https://<OWNER>.github.io/sql-kingdom/` and open today's day.
+- **Online:** go to `https://pavan-postgres.github.io/sql-kingdom/` and open today's day.
 - **Offline:** download `pages/day01.html` (or any `dayNN.html`) and double-click it. The voice, 3D scenes and practice box are all inside the file; no install, no internet.
 
 Press **Play** and listen. Progress and scorecards are saved in your browser. Use the **Recap** tab to see them or copy your progress code.

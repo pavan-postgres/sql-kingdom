@@ -1,0 +1,5 @@
+dist/
+*.bak
+node_modules/
+spikes/pglite/web/pglite/
+.DS_Store

@@ -1,0 +1,13 @@
+<!DOCTYPE html><meta charset="utf-8"><title>PGlite spike</title>
+<pre id="o">loading…</pre>
+<script type="module">
+import { PGlite } from './pglite/index.js';
+const o = document.getElementById('o'); const t0 = performance.now();
+try {
+  const db = new PGlite();
+  await db.waitReady;
+  await db.exec("create table a as select g as id from generate_series(1,20) g; create table b as select g as id, g%20+1 as a_id from generate_series(1,200000) g; analyze a; analyze b;");
+  const r = await db.query('explain select * from a join b on b.a_id = a.id');
+  o.textContent = 'OK in ' + Math.round(performance.now() - t0) + ' ms\n' + r.rows.map(x => x['QUERY PLAN']).join('\n');
+} catch (e) { o.textContent = 'FAIL ' + e; }
+</script>

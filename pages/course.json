@@ -1,6 +1,6 @@
 {
   "mode": "manual",
-  "unlocked": 1,
+  "unlocked": 2,
   "start": "",
   "perDay": 1,
   "note": "mode: manual opens days 1..unlocked. mode: schedule opens perDay new days each day from start (YYYY-MM-DD). mode: all opens everything."
